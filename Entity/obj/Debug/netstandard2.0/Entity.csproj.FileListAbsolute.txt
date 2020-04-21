@@ -1,0 +1,35 @@
+C:\Users\anton\Desktop\PrimerParcial\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\PrimerParcial\Entity\obj\Debug\netstandard2.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\PrimerParcial\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\PrimerParcial\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+C:\Users\anton\Desktop\PrimerParcial\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+C:\Users\anton\Desktop\PrimerParcial\Entity\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\anton\Desktop\PrimerParcial\Entity\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\anton\Desktop\PrimerParcial\Entity\obj\Debug\netstandard2.0\Entity.dll
+C:\Users\anton\Desktop\PrimerParcial\Entity\obj\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Desktop\ParcialUno\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+C:\Users\Developer\Desktop\ParcialUno\Entity\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Desktop\ParcialUno\Entity\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Desktop\ParcialUno\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+C:\Users\Developer\Desktop\ParcialUno\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\ParcialUno\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+C:\Users\Developer\Desktop\ParcialUno\Entity\obj\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Desktop\ParcialUno\Entity\obj\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\obj\Debug\netstandard2.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\obj\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Entity\obj\Debug\netstandard2.0\Entity.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\obj\Debug\netstandard2.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\obj\Debug\netstandard2.0\Entity.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Entity\obj\Debug\netstandard2.0\Entity.pdb

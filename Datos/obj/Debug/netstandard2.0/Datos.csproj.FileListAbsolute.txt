@@ -1,0 +1,47 @@
+C:\Users\anton\Desktop\PrimerParcial\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\PrimerParcial\Datos\obj\Debug\netstandard2.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\PrimerParcial\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\PrimerParcial\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+C:\Users\anton\Desktop\PrimerParcial\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+C:\Users\anton\Desktop\PrimerParcial\Datos\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\anton\Desktop\PrimerParcial\Datos\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\anton\Desktop\PrimerParcial\Datos\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\anton\Desktop\PrimerParcial\Datos\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\anton\Desktop\PrimerParcial\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+C:\Users\anton\Desktop\PrimerParcial\Datos\obj\Debug\netstandard2.0\Datos.dll
+C:\Users\anton\Desktop\PrimerParcial\Datos\obj\Debug\netstandard2.0\Datos.pdb
+C:\Users\Developer\Desktop\ParcialUno\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+C:\Users\Developer\Desktop\ParcialUno\Datos\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Developer\Desktop\ParcialUno\Datos\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Developer\Desktop\ParcialUno\Datos\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Desktop\ParcialUno\Datos\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Desktop\ParcialUno\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+C:\Users\Developer\Desktop\ParcialUno\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\ParcialUno\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+C:\Users\Developer\Desktop\ParcialUno\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+C:\Users\Developer\Desktop\ParcialUno\Datos\obj\Debug\netstandard2.0\Datos.dll
+C:\Users\Developer\Desktop\ParcialUno\Datos\obj\Debug\netstandard2.0\Datos.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\obj\Debug\netstandard2.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\obj\Debug\netstandard2.0\Datos.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Datos\obj\Debug\netstandard2.0\Datos.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\obj\Debug\netstandard2.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\obj\Debug\netstandard2.0\Datos.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Datos\obj\Debug\netstandard2.0\Datos.pdb

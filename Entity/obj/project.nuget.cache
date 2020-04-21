@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WtwScyxn0LsXvmc1l0kxTM55dTdoUFa2HsKX490H4rbXrAoJIHSs9kc9MYF52KtpVBtbCwj1WUWKdzmIAEXWtA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vidal Armenta\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Vidal Armenta\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

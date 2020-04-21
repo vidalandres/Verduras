@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de frutas</h2>
+            <form>
+
+                <div class="form-group">
+                    <label>Código</label>
+                    <input type="number" placeholder="Codigo" name="id" [(ngModel)]="fruta.id" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="fruta.nombre" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Cantidad</label>
+                    <input type="number" name="cantidad" [(ngModel)]="fruta.cantidad" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Unidad</label>
+                    <input type="text" name="unidad" [(ngModel)]="fruta.unidad" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Proveedor</label>
+                    <input type="text" name="proveedor" [(ngModel)]="fruta.Proveedor" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Guardar</button>
+                    <button class="btn btn-secondary" (click)="clear()" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

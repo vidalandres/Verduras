@@ -1,0 +1,23 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Unidad</th>
+            <th scope="col">Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fruta of frutas; index as i">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ fruta.id }} </td>
+            <td>{{ fruta.nombre }}</td>
+            <td>{{ fruta.cantidad }}</td>
+            <td>{{ fruta.unidad }}</td>
+            <td>{{ fruta.proveedor }}</td>
+        </tr>
+    </tbody>
+</table>

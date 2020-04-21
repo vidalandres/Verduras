@@ -1,0 +1,55 @@
+C:\Users\anton\Desktop\PrimerParcial\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\PrimerParcial\Logica\obj\Debug\netstandard2.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\PrimerParcial\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\PrimerParcial\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+C:\Users\anton\Desktop\PrimerParcial\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+C:\Users\anton\Desktop\PrimerParcial\Logica\bin\Debug\netstandard2.0\Logica.dll
+C:\Users\anton\Desktop\PrimerParcial\Logica\bin\Debug\netstandard2.0\Logica.pdb
+C:\Users\anton\Desktop\PrimerParcial\Logica\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\anton\Desktop\PrimerParcial\Logica\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\anton\Desktop\PrimerParcial\Logica\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\anton\Desktop\PrimerParcial\Logica\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\anton\Desktop\PrimerParcial\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+C:\Users\anton\Desktop\PrimerParcial\Logica\obj\Debug\netstandard2.0\Logica.dll
+C:\Users\anton\Desktop\PrimerParcial\Logica\obj\Debug\netstandard2.0\Logica.pdb
+C:\Users\Developer\Desktop\ParcialUno\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+C:\Users\Developer\Desktop\ParcialUno\Logica\bin\Debug\netstandard2.0\Logica.dll
+C:\Users\Developer\Desktop\ParcialUno\Logica\bin\Debug\netstandard2.0\Logica.pdb
+C:\Users\Developer\Desktop\ParcialUno\Logica\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Developer\Desktop\ParcialUno\Logica\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Desktop\ParcialUno\Logica\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Developer\Desktop\ParcialUno\Logica\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Desktop\ParcialUno\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+C:\Users\Developer\Desktop\ParcialUno\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\ParcialUno\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+C:\Users\Developer\Desktop\ParcialUno\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+C:\Users\Developer\Desktop\ParcialUno\Logica\obj\Debug\netstandard2.0\Logica.dll
+C:\Users\Developer\Desktop\ParcialUno\Logica\obj\Debug\netstandard2.0\Logica.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\bin\Debug\netstandard2.0\Logica.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\bin\Debug\netstandard2.0\Logica.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\obj\Debug\netstandard2.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\obj\Debug\netstandard2.0\Logica.dll
+C:\Users\Developer\Documents\WebProjects\Web3Layers\Logica\obj\Debug\netstandard2.0\Logica.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\bin\Debug\netstandard2.0\Logica.deps.json
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\bin\Debug\netstandard2.0\Logica.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\bin\Debug\netstandard2.0\Logica.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\bin\Debug\netstandard2.0\Datos.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\bin\Debug\netstandard2.0\Datos.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\obj\Debug\netstandard2.0\Logica.csprojAssemblyReference.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\obj\Debug\netstandard2.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\obj\Debug\netstandard2.0\Logica.AssemblyInfo.cs
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\obj\Debug\netstandard2.0\Logica.csproj.CopyComplete
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\obj\Debug\netstandard2.0\Logica.dll
+C:\Users\Vidal Armenta\Desktop\Trabajo\Verduras\Logica\obj\Debug\netstandard2.0\Logica.pdb
