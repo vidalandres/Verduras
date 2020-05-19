@@ -1,23 +1,32 @@
+<form>
+    <div class="formGroup">
+        <input type="text" [(ngModel)]="key" name="key" placeholder="Buscar" class="form-control">
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <!--<th scope="col">#</th>-->
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Unidad</th>
+                <th scope="col">Proveedor</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let fruta of frutas|verdura:key; index as i">
+                <!--<th scope="row">{{ i + 1 }}</th>-->
+                <td>{{ fruta.id }} </td>
+                <td>{{ fruta.nombre }}</td>
+                <td>{{ fruta.cantidad }}</td>
+                <td>{{ fruta.unidad }}</td>
+                <td>{{ fruta.proveedor }}</td>
+                <td><button class="btn btn-primary btn-sm" (click)="save(i)" routerLink='/edit'>Editar</button></td>
+                <td><button class="btn btn-warning btn-sm">Eliminar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Id</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Unidad</th>
-            <th scope="col">Proveedor</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let fruta of frutas; index as i">
-            <th scope="row">{{ i + 1 }}</th>
-            <td>{{ fruta.id }} </td>
-            <td>{{ fruta.nombre }}</td>
-            <td>{{ fruta.cantidad }}</td>
-            <td>{{ fruta.unidad }}</td>
-            <td>{{ fruta.proveedor }}</td>
-        </tr>
-    </tbody>
-</table>

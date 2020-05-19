@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Fruta } from '../models/fruta';
 
+
+import { Fruta } from '../models/fruta';
 import { FrutaService } from '../services/fruta.service';
+import { ClientService } from 'src/app/services/client.service';
 
 
 @Component({
@@ -12,8 +14,9 @@ import { FrutaService } from '../services/fruta.service';
 export class SearchComponent implements OnInit {
 
   frutas:Fruta[];
+  key:string;
 
-  constructor( private frutaSe:FrutaService ) {
+  constructor( private frutaSe:FrutaService, private cS:ClientService ) {
     this.frutas = new Array<Fruta>();
   }
 
@@ -29,6 +32,10 @@ export class SearchComponent implements OnInit {
         }
       }
     );
+  }
+
+  save(index:number){
+    this.cS.write(this.frutas[index]);
   }
 
 }

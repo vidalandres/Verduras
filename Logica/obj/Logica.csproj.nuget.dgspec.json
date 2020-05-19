@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Logica\\Logica.csproj": {}
+    "C:\\Users\\Developer\\Desktop\\Verduras\\Logica\\Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Datos\\Datos.csproj": {
+    "C:\\Users\\Developer\\Desktop\\Verduras\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Verduras\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\Vidal Armenta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Datos\\obj\\",
+        "projectPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vidal Armenta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj"
+              "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\Entity.csproj"
               }
             }
           }
@@ -38,21 +38,29 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netstandard2.1": {
           "dependencies": {
-            "NETStandard.Library": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             },
             "System.Collections": {
               "target": "Package",
               "version": "[4.3.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.1, )"
             }
           },
           "imports": [
@@ -65,30 +73,35 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj": {
+    "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\Vidal Armenta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\obj\\",
+        "projectPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vidal Armenta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
             "projectReferences": {}
           }
         },
@@ -99,13 +112,11 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netstandard2.1": {
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -118,36 +129,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Logica\\Logica.csproj": {
+    "C:\\Users\\Developer\\Desktop\\Verduras\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Logica\\Logica.csproj",
+        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\Verduras\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Logica\\Logica.csproj",
-        "packagesPath": "C:\\Users\\Vidal Armenta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Logica\\obj\\",
+        "projectPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Logica\\Logica.csproj",
+        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vidal Armenta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Datos\\Datos.csproj"
+              "C:\\Users\\Developer\\Desktop\\Verduras\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Datos\\Datos.csproj"
               },
-              "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Vidal Armenta\\Desktop\\Trabajo\\Verduras\\Entity\\Entity.csproj"
+              "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Developer\\Desktop\\Verduras\\Entity\\Entity.csproj"
               }
             }
           }
@@ -159,15 +175,7 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
+        "netstandard2.1": {
           "imports": [
             "net461",
             "net462",
@@ -178,6 +186,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }

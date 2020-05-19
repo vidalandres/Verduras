@@ -1,0 +1,9 @@
+C:\Users\Developer\Desktop\Verduras\Entity\bin\Debug\netstandard2.1\Entity.deps.json
+C:\Users\Developer\Desktop\Verduras\Entity\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\Developer\Desktop\Verduras\Entity\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\Developer\Desktop\Verduras\Entity\obj\Debug\netstandard2.1\Entity.csprojAssemblyReference.cache
+C:\Users\Developer\Desktop\Verduras\Entity\obj\Debug\netstandard2.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Desktop\Verduras\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\Verduras\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfo.cs
+C:\Users\Developer\Desktop\Verduras\Entity\obj\Debug\netstandard2.1\Entity.dll
+C:\Users\Developer\Desktop\Verduras\Entity\obj\Debug\netstandard2.1\Entity.pdb

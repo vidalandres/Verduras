@@ -4,9 +4,13 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Abstractions;
 using Microsoft.Extensions.Hosting;
 using System;
+using Entity;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using Datos;
 
 namespace Verduras
 {
@@ -20,8 +24,12 @@ namespace Verduras
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection services)
         {
+
+            var cadena = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<GeneralContext>( opt => opt.UseSqlServer(cadena, b => b.MigrationsAssembly("Verduras")));
+            
             services.AddControllersWithViews();
 
             //Agregar OpenApi Swagger

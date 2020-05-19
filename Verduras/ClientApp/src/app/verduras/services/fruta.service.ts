@@ -27,11 +27,20 @@ export class FrutaService {
         catchError(this.handleErrorService.handleError<Fruta[]>('Consulta Fruta', null))
     );
   }
+
   post(liq: Fruta): Observable<Fruta> {
     return this.http.post<Fruta>(this.baseUrl + 'api/fruta', liq)
       .pipe(
         tap(_ => this.handleErrorService.log('datos enviados')),
         catchError(this.handleErrorService.handleError<Fruta>('Registrar Fruta', null))
+    );
+  }
+
+  put(liq: Fruta): Observable<Fruta> {    
+    return this.http.put<Fruta>(this.baseUrl + 'api/fruta', liq)
+      .pipe(
+        tap(_ => this.handleErrorService.log('datos enviados')),
+        catchError(this.handleErrorService.handleError<Fruta>('Actualizar Fruta', null))
     );
   }
 

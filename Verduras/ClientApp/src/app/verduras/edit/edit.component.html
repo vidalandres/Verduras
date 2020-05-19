@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Editar fruta</h2>
+            <form [formGroup]="form">
+
+                <div class="form-group">
+                    <label>Código</label>
+                    <input type="number" placeholder="Codigo" formControlName="id" [(ngModel)]="fruta.id" class="form-control" disabled 
+                    [ngClass]="{'is-invalid':control.id.errors}"/>
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre" formControlName="nombre" [(ngModel)]="fruta.nombre" class="form-control" 
+                    [ngClass]="{'is-invalid':control.nombre.errors}"/>
+                </div>
+                <div class="form-group">
+                    <label>Cantidad</label>
+                    <input type="number" formControlName="cantidad" [(ngModel)]="fruta.cantidad" class="form-control" 
+                    [ngClass]="{'is-invalid':control.cantidad.errors}"/>
+                </div>
+                <div class="form-group">
+                    <label>Unidad</label>
+                    <select formControlName="unidad" class="form-control" [(ngModel)]="fruta.unidad" [ngClass]="{'is-invalid':control.unidad.errors}">
+                        <option selected>Kilogramo</option>
+                        <option>Libra</option>
+                        <option>Mano</option>
+                        <option>Bulto</option>
+                        <option>Arroba</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Proveedor</label>
+                    <select formControlName="proveedor" class="form-control" [(ngModel)]="fruta.proveedor" [ngClass]="{'is-invalid':control.proveedor.errors}">
+                        <option selected>San Mateo</option>
+                        <option>Abastos K</option>
+                        <option>Santa Barbara</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="back()">Atras</button>
+                    <button class="btn btn-success mr-1" (click)="update()">Actualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

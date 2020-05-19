@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Entity;
+using Datos;
 using Logica;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,13 +18,10 @@ namespace Verduras.Controllers
     public class FrutaController: ControllerBase
     {
         private readonly FrutaService _frutaService;
-        public IConfiguration Configuration { get; }
         
-        public FrutaController(IConfiguration configuration)
+        public FrutaController(GeneralContext _context)
         {
-            Configuration = configuration;
-            string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-            _frutaService = new FrutaService(connectionString);
+            _frutaService = new FrutaService(_context);
         }
         // GET: api/Fruta
         [HttpGet]
@@ -44,6 +42,20 @@ namespace Verduras.Controllers
                 return BadRequest(response.Mensaje);
             }
             return Ok(response.Fruta);
+        }
+
+        [HttpPut]
+        public ActionResult<FrutaViewModel> Put(Fruta fruta)
+        {
+            var response = _frutaService.Actualizar(fruta);
+            if (response.Error)
+            {
+                return BadRequest(response.Mensaje);
+            }
+            return Ok(response.Fruta);
+
+            return BadRequest();
+            
         }
 
         private Fruta MapearFruta(FrutaInputModel frutaInput)

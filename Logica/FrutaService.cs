@@ -1,43 +1,46 @@
 using Entity;
 using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Datos;
 
 namespace Logica
 {
     public class FrutaService
     {
-        private readonly ConnectionManager _conexion;
-        private readonly FrutaRepository _repositorio;
+        private readonly GeneralContext _context;
 
-        public FrutaService(string connectionString)
+        public FrutaService(GeneralContext context)
         {
-            _conexion = new ConnectionManager(connectionString);
-            _repositorio = new FrutaRepository(_conexion);
+            _context=context;
         }
 
         public GuardarResponse Guardar(Fruta fruta)
         {
-            try
-            {
-                _conexion.Open();
-                _repositorio.Guardar(fruta);
-                _conexion.Close();
-                return new GuardarResponse(fruta);
-            }
-            catch (Exception e)
-            {
-                return new GuardarResponse($"Error de la Aplicacion: {e.Message}");
-            }
-            finally { _conexion.Close(); }
+            _context.Frutas.Add(fruta);
+            _context.SaveChanges();
+            return new GuardarResponse(fruta);
         }
 
         public List<Fruta> ConsultarTodos()
         {
-            _conexion.Open();
-            List<Fruta> frutas = _repositorio.ConsultarTodos();
-            _conexion.Close();
-            return frutas;
+            var rta = _context.Frutas.ToListAsync();
+            return rta.Result;
+        }
+
+        public GuardarResponse Actualizar(Fruta fruta){
+            var fr = _context.Frutas.Find(fruta.Id);
+            if(fr!=null){
+                fr.Nombre = fruta.Nombre;
+                fr.Proveedor= fruta.Proveedor;
+                fr.Cantidad = fruta.Cantidad;
+                fr.Unidad = fruta.Unidad;
+                _context.Frutas.Update(fr);
+                _context.SaveChanges();
+                return new GuardarResponse(fruta);
+            }
+
+            return new GuardarResponse($"Error de la Aplicacion: {fruta.Id} no se encuentra registrado.");
         }
 
     }

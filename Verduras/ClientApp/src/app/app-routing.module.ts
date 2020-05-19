@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SearchComponent } from './verduras/search/search.component';
 import { RecordComponent } from './verduras/record/record.component';
+import { EditComponent } from './verduras/edit/edit.component';
 
 import { Routes, RouterModule } from '@angular/router';
 
@@ -18,6 +19,10 @@ const routes: Routes = [
   { 
     path: '', 
     component: RecordComponent
+  },
+  { 
+    path: 'edit', 
+    component: EditComponent
   }
 ];
 
