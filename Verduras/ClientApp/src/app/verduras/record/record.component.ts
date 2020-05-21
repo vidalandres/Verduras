@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Fruta } from '../models/fruta';
+import { Producto } from '../models/producto';
 
-import { FrutaService } from '../services/fruta.service';
+import { ProductoService } from '../services/producto.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -15,14 +15,14 @@ import { AlertModalComponent } from 'src/app/@base/alert-modal/alert-modal.compo
 export class RecordComponent implements OnInit {
 
   form:FormGroup;
-  fruta:Fruta;
+  producto:Producto;
 
   constructor(
-    private frutaSe:FrutaService, 
+    private productoSe:ProductoService, 
     private _form:FormBuilder,
     private modalService: NgbModal
     ) {    
-    this.fruta = new Fruta();
+    this.producto = new Producto();
   }
 
   ngOnInit() {
@@ -30,6 +30,8 @@ export class RecordComponent implements OnInit {
       {
         //id:['', Validators.required],
         nombre:['', Validators.required],
+        costo:['', Validators.required],
+        margen:['', Validators.required],
         cantidad:['', Validators.required],
         unidad:['', Validators.required],
         proveedor:['', Validators.required]
@@ -42,11 +44,11 @@ export class RecordComponent implements OnInit {
       this.openMB("Resultado Operacion", "Rellene todos los campos");
       return;
     }
-    this.frutaSe.post(this.fruta).subscribe(
+    this.productoSe.post(this.producto).subscribe(
       (data) => {
         if(data!=null) {
           this.openMB("Resultado Operacion", "Se ha registrado con exito");
-          this.fruta = data;
+          this.producto = data;
         }
         else
           this.openMB("Resultado Operacion", "El id ya se ha registrado");
@@ -66,7 +68,7 @@ export class RecordComponent implements OnInit {
   get control() { return this.form.controls; }
 
   clear():void{
-    this.fruta = new Fruta();
+    this.producto = new Producto();
   }
 
 }

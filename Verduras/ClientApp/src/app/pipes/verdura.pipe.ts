@@ -1,12 +1,12 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Fruta } from '../verduras/models/fruta';
+import { Producto } from '../verduras/models/producto';
 
 @Pipe({
   name: 'verdura'
 })
 export class VerduraPipe implements PipeTransform {
 
-  transform(value: Fruta[], key:string): any {
+  transform(value: Producto[], key:string): any {
     console.log(value);
     if(key==null)
       return value;

@@ -6,10 +6,13 @@ namespace Datos
     public class GeneralContext : DbContext
     {
         public GeneralContext(DbContextOptions options) : base(options)
-        {
+        {   
             
         }
 
-        public DbSet<Fruta> Frutas { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Venta> Ventas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Vendido> Vendidos { get; set; }
     }
 }

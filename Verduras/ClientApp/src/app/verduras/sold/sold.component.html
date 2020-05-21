@@ -1,0 +1,26 @@
+<form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <!--<th scope="col">#</th>-->
+                <th scope="col">Id</th>
+                <th scope="col">Vendedor Id</th>
+                <th scope="col">Total</th>
+                <th scope="col">Utilidad</th>
+                <th scope="col">Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ven of vendidos; index as i">
+                <!--<th scope="row">{{ i + 1 }}</th>-->
+                <td>{{ ven.id }} </td>
+                <td>{{ ven.vendedor==null?"Vacio":ven.vendedor }}</td>
+                <td>{{ ven.total }}</td>
+                <td>{{ ven.utilidad }}</td>
+                <td>{{ ven.fecha }}</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 
-import { Fruta } from '../models/fruta';
-import { FrutaService } from '../services/fruta.service';
+import { Producto } from '../models/producto';
+import { ProductoService } from '../services/producto.service';
 import { ClientService } from 'src/app/services/client.service';
 
 
@@ -13,29 +13,29 @@ import { ClientService } from 'src/app/services/client.service';
 })
 export class SearchComponent implements OnInit {
 
-  frutas:Fruta[];
+  productos:Producto[];
   key:string;
 
-  constructor( private frutaSe:FrutaService, private cS:ClientService ) {
-    this.frutas = new Array<Fruta>();
+  constructor( private productoSe:ProductoService, private cS:ClientService ) {
+    this.productos = new Array<Producto>();
   }
 
   ngOnInit() {
-    this.frutaSe.get().subscribe (
+    this.productoSe.get().subscribe (
       (data) => {
         if(data==null){
-          this.frutas = new Array<Fruta>();
-          this.frutas.push(new Fruta);
+          this.productos = new Array<Producto>();
+          this.productos.push(new Producto);
         }
         else {
-          this.frutas = data;
+          this.productos = data;
         }
       }
     );
   }
 
   save(index:number){
-    this.cS.write(this.frutas[index]);
+    this.cS.write(this.productos[index]);
   }
 
 }

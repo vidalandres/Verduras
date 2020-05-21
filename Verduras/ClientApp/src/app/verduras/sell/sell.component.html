@@ -1,0 +1,52 @@
+<div class="back">
+    <div class="all">
+        <form>
+            <div class="formGroup">
+                <input type="text" [(ngModel)]="key" name="key" placeholder="Buscar" class="form-control">
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <!--<th scope="col">#</th>-->
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Añadir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let producto of productos|verdura:key; index as i">
+                        <!--<th scope="row">{{ i + 1 }}</th>-->
+                        <td>{{ producto.nombre }}</td>
+                        <td>{{ producto.cantidad }}</td>
+                        <td><button class="btn btn-primary btn-sm" (click)="add(i)">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div class="sell">
+        <form>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <!--<th scope="col">#</th>-->
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Añadir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let fact of facts; index as i">
+                        <!--<th scope="row">{{ i + 1 }}</th>-->
+                        <td>{{ fact.nombre }}</td>
+                        <td>{{ fact.cantidad }}</td>
+                        <td><button class="btn btn-primary btn-sm" (click)="remove(i)">-</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="formGroup">
+                <button class="btn btn-primary btn-sm" (click)="sell()" >Vender</button>
+            </div>
+        </form>
+    </div>
+</div>

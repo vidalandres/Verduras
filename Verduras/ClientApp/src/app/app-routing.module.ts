@@ -6,6 +6,8 @@ import { RecordComponent } from './verduras/record/record.component';
 import { EditComponent } from './verduras/edit/edit.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { SellComponent } from './verduras/sell/sell.component';
+import { SoldComponent } from './verduras/sold/sold.component';
 
 const routes: Routes = [
   {
@@ -23,6 +25,14 @@ const routes: Routes = [
   { 
     path: 'edit', 
     component: EditComponent
+  },
+  { 
+    path: 'sell', 
+    component: SellComponent
+  },
+  { 
+    path: 'sold', 
+    component: SoldComponent
   }
 ];
 

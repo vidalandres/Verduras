@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Fruta } from '../models/fruta';
+import { Producto } from '../models/producto';
 import { Observable } from 'rxjs';
 import { HandleHttpErrorService } from '../../@base/handle-http-error.service';
 import {catchError, map, tap} from 'rxjs/operators';
@@ -8,7 +8,7 @@ import {catchError, map, tap} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class FrutaService {
+export class ProductoService {
 
   baseUrl: string;
 
@@ -20,27 +20,27 @@ export class FrutaService {
     this.baseUrl = baseUrl;
   }
 
-  get(): Observable<Fruta[]> {
-    return this.http.get<Fruta[]>('api/fruta')
+  get(): Observable<Producto[]> {
+    return this.http.get<Producto[]>('api/producto')
       .pipe(
         tap(_ => this.handleErrorService.log('datos recividos')),
-        catchError(this.handleErrorService.handleError<Fruta[]>('Consulta Fruta', null))
+        catchError(this.handleErrorService.handleError<Producto[]>('Consulta Producto', null))
     );
   }
 
-  post(liq: Fruta): Observable<Fruta> {
-    return this.http.post<Fruta>(this.baseUrl + 'api/fruta', liq)
+  post(prod: Producto): Observable<Producto> {
+    return this.http.post<Producto>(this.baseUrl + 'api/producto', prod)
       .pipe(
         tap(_ => this.handleErrorService.log('datos enviados')),
-        catchError(this.handleErrorService.handleError<Fruta>('Registrar Fruta', null))
+        catchError(this.handleErrorService.handleError<Producto>('Registrar Producto', null))
     );
   }
 
-  put(liq: Fruta): Observable<Fruta> {    
-    return this.http.put<Fruta>(this.baseUrl + 'api/fruta', liq)
+  put(prod: Producto): Observable<Producto> {    
+    return this.http.put<Producto>(this.baseUrl + 'api/producto', prod)
       .pipe(
         tap(_ => this.handleErrorService.log('datos enviados')),
-        catchError(this.handleErrorService.handleError<Fruta>('Actualizar Fruta', null))
+        catchError(this.handleErrorService.handleError<Producto>('Actualizar Producto', null))
     );
   }
 

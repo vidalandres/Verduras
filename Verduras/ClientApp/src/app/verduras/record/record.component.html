@@ -1,27 +1,37 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h2>Registro de frutas</h2>
+            <h2>Registro de productos</h2>
             <form [formGroup]="form">
 
                 <!--<div class="form-group">
                     <label>Código</label>
-                    <input type="number" placeholder="Codigo" formControlName="id" [(ngModel)]="fruta.id" class="form-control" 
+                    <input type="number" placeholder="Codigo" formControlName="id" [(ngModel)]="producto.id" class="form-control" 
                     [ngClass]="{'is-invalid':control.id.errors}"/>
                 </div>-->
                 <div class="form-group">
                     <label>Nombre</label>
-                    <input type="text" placeholder="Nombre" formControlName="nombre" [(ngModel)]="fruta.nombre" class="form-control" 
+                    <input type="text" placeholder="Nombre" formControlName="nombre" [(ngModel)]="producto.nombre" class="form-control" 
+                    [ngClass]="{'is-invalid':control.nombre.errors}"/>
+                </div>
+                <div class="form-group">
+                    <label>Costo</label>
+                    <input type="number" placeholder="Costo" formControlName="costo" [(ngModel)]="producto.costo" class="form-control" 
+                    [ngClass]="{'is-invalid':control.nombre.errors}"/>
+                </div>
+                <div class="form-group">
+                    <label>Margen [%]</label>
+                    <input type="number" placeholder="Margen" formControlName="margen" [(ngModel)]="producto.margen" class="form-control" 
                     [ngClass]="{'is-invalid':control.nombre.errors}"/>
                 </div>
                 <div class="form-group">
                     <label>Cantidad</label>
-                    <input type="number" formControlName="cantidad" [(ngModel)]="fruta.cantidad" class="form-control" 
+                    <input type="number" formControlName="cantidad" [(ngModel)]="producto.cantidad" class="form-control" 
                     [ngClass]="{'is-invalid':control.cantidad.errors}"/>
                 </div>
                 <div class="form-group">
                     <label>Unidad</label>
-                    <select formControlName="unidad" class="form-control" [(ngModel)]="fruta.unidad" [ngClass]="{'is-invalid':control.unidad.errors}">
+                    <select formControlName="unidad" class="form-control" [(ngModel)]="producto.unidad" [ngClass]="{'is-invalid':control.unidad.errors}">
                         <option selected>Kilogramo</option>
                         <option>Libra</option>
                         <option>Mano</option>
@@ -31,7 +41,7 @@
                 </div>
                 <div class="form-group">
                     <label>Proveedor</label>
-                    <select formControlName="proveedor" class="form-control" [(ngModel)]="fruta.proveedor" [ngClass]="{'is-invalid':control.proveedor.errors}">
+                    <select formControlName="proveedor" class="form-control" [(ngModel)]="producto.proveedor" [ngClass]="{'is-invalid':control.proveedor.errors}">
                         <option selected>San Mateo</option>
                         <option>Abastos K</option>
                         <option>Santa Barbara</option>

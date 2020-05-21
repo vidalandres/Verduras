@@ -5,13 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entity
 {
-    public class Fruta
+    public class Usuario
     {
         [Key]
-        public int Id { get; set; }
+        public string Cedula { get; set; }
         public string Nombre { get; set; }
-        public double Cantidad { get; set; }
-        public string Unidad { get; set; }
-        public string Proveedor { get; set; }
+        public string Rol { get; set; }
     }
 }

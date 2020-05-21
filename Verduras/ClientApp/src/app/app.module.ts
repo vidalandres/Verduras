@@ -13,6 +13,8 @@ import { SearchComponent } from './verduras/search/search.component';
 import { VerduraPipe } from './pipes/verdura.pipe';
 import { EditComponent } from './verduras/edit/edit.component';
 import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
+import { SellComponent } from './verduras/sell/sell.component';
+import { SoldComponent } from './verduras/sold/sold.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
     SearchComponent,
     VerduraPipe,
     EditComponent,
-    AlertModalComponent
+    AlertModalComponent,
+    SellComponent,
+    SoldComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

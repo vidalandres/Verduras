@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Fruta } from '../verduras/models/fruta';
+import { Producto } from '../verduras/models/producto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClientService {
-  write(data:Fruta){
+  write(data:Producto){
     localStorage.clear();
     localStorage.setItem('frt', JSON.stringify(data));
     //SE ESCRIBIRÄ EL TOKEN EN CACHE O LOCALSTORAGE
   }
 
-  read():Fruta{
+  read():Producto{
     if(null==localStorage.getItem('frt'))
       location.pathname='';
     return JSON.parse(localStorage.getItem('frt'));

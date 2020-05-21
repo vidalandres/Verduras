@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Fruta } from '../models/fruta';
+import { Producto } from '../models/producto';
 
-import { FrutaService } from '../services/fruta.service';
+import { ProductoService } from '../services/producto.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ClientService } from 'src/app/services/client.service';
 import { Location } from '@angular/common';
@@ -17,15 +17,15 @@ import { AlertModalComponent } from 'src/app/@base/alert-modal/alert-modal.compo
 export class EditComponent implements OnInit {
 
   form:FormGroup;
-  fruta:Fruta;
+  producto:Producto;
 
   constructor(
-    private frutaSe:FrutaService, 
+    private productoSe:ProductoService, 
     private _form:FormBuilder, 
     private cS:ClientService, 
     private location:Location,
     private modalService: NgbModal) {    
-    this.fruta = new Fruta();
+    this.producto = new Producto();
   }
 
   ngOnInit() {
@@ -38,11 +38,11 @@ export class EditComponent implements OnInit {
         proveedor:['', Validators.required]
       }
     );
-    this.fruta = this.cS.read();
+    this.producto = this.cS.read();
   }
 
   update():void{
-    this.frutaSe.put(this.fruta).subscribe(
+    this.productoSe.put(this.producto).subscribe(
       (data) => {
         if(data!=null) {
           this.cS.clear();
