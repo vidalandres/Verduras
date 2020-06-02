@@ -9,6 +9,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { SellComponent } from './verduras/sell/sell.component';
 import { SoldComponent } from './verduras/sold/sold.component';
 
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './services/auth.guard';
+
 const routes: Routes = [
   {
     path: 'record',
@@ -33,6 +36,10 @@ const routes: Routes = [
   { 
     path: 'sold', 
     component: SoldComponent
+  },
+  { 
+    path: 'login', 
+    component: LoginComponent
   }
 ];
 

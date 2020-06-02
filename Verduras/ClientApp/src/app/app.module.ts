@@ -15,6 +15,8 @@ import { EditComponent } from './verduras/edit/edit.component';
 import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
 import { SellComponent } from './verduras/sell/sell.component';
 import { SoldComponent } from './verduras/sold/sold.component';
+import { LoginComponent } from './login/login.component';
+import { JwtInterceptor } from './services/jwt.interceptor';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { SoldComponent } from './verduras/sold/sold.component';
     EditComponent,
     AlertModalComponent,
     SellComponent,
-    SoldComponent
+    SoldComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -37,7 +40,11 @@ import { SoldComponent } from './verduras/sold/sold.component';
     NgbModule
   ],
   entryComponents:[AlertModalComponent],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass:JwtInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

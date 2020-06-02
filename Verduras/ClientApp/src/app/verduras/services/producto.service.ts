@@ -21,27 +21,15 @@ export class ProductoService {
   }
 
   get(): Observable<Producto[]> {
-    return this.http.get<Producto[]>('api/producto')
-      .pipe(
-        tap(_ => this.handleErrorService.log('datos recividos')),
-        catchError(this.handleErrorService.handleError<Producto[]>('Consulta Producto', null))
-    );
+    return this.http.get<Producto[]>('api/producto');
   }
 
   post(prod: Producto): Observable<Producto> {
-    return this.http.post<Producto>(this.baseUrl + 'api/producto', prod)
-      .pipe(
-        tap(_ => this.handleErrorService.log('datos enviados')),
-        catchError(this.handleErrorService.handleError<Producto>('Registrar Producto', null))
-    );
+    return this.http.post<Producto>(this.baseUrl + 'api/producto', prod);
   }
 
   put(prod: Producto): Observable<Producto> {    
-    return this.http.put<Producto>(this.baseUrl + 'api/producto', prod)
-      .pipe(
-        tap(_ => this.handleErrorService.log('datos enviados')),
-        catchError(this.handleErrorService.handleError<Producto>('Actualizar Producto', null))
-    );
+    return this.http.put<Producto>(this.baseUrl + 'api/producto', prod);
   }
 
 }
