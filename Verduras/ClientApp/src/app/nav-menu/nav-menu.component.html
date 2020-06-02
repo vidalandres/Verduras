@@ -47,12 +47,12 @@
               >Ventas</a
             >
           </li>
-          <li class="nav-item" *ngIf="currentUser" [routerLinkActive]="['link-active']">
+          <li class="nav-item"  *ngIf="currentUser" [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" (click)="logout()"
               >Logout</a
             >
           </li>
-          <li class="nav-item" *ngIf="!currentUser" [routerLinkActive]="['link-active']">
+          <li class="nav-item" *ngIf="!currentUser"[routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" [routerLink]="['/login']"
               >Login</a
             >

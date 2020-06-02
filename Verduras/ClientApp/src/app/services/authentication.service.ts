@@ -17,7 +17,7 @@ export class AuthenticationService {
   constructor(
     private http:HttpClient,
     @Inject('BASE_URL') _baseUrl:string,
-    private handleErrorService
+    private handleErrorService: HandleHttpErrorService
   ) { 
     this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
     this.currentUser = this.currentUserSubject.asObservable();

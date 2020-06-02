@@ -41,9 +41,6 @@ namespace Verduras.Migrations
                     b.Property<double>("Precio")
                         .HasColumnType("float");
 
-                    b.Property<int?>("Producto")
-                        .HasColumnType("int");
-
                     b.Property<string>("Proveedor")
                         .HasColumnType("nvarchar(max)");
 
@@ -52,23 +49,24 @@ namespace Verduras.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Producto");
-
                     b.ToTable("Productos");
                 });
 
             modelBuilder.Entity("Entity.Usuario", b =>
                 {
-                    b.Property<string>("Cedula")
+                    b.Property<string>("UserName")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Nombre")
+                    b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Rol")
+                    b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Cedula");
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserName");
 
                     b.ToTable("Usuarios");
                 });
@@ -83,9 +81,6 @@ namespace Verduras.Migrations
                     b.Property<int>("Producto")
                         .HasColumnType("int");
 
-                    b.Property<int?>("VentId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Venta")
                         .HasColumnType("int");
 
@@ -93,7 +88,7 @@ namespace Verduras.Migrations
 
                     b.HasIndex("Producto");
 
-                    b.HasIndex("VentId");
+                    b.HasIndex("Venta");
 
                     b.ToTable("Vendidos");
                 });
@@ -108,9 +103,6 @@ namespace Verduras.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("ProductoId")
-                        .HasColumnType("int");
-
                     b.Property<double>("Total")
                         .HasColumnType("float");
 
@@ -122,18 +114,9 @@ namespace Verduras.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductoId");
-
                     b.HasIndex("Vendedor");
 
                     b.ToTable("Ventas");
-                });
-
-            modelBuilder.Entity("Entity.Producto", b =>
-                {
-                    b.HasOne("Entity.Venta", null)
-                        .WithMany("Productos")
-                        .HasForeignKey("Producto");
                 });
 
             modelBuilder.Entity("Entity.Vendido", b =>
@@ -146,15 +129,13 @@ namespace Verduras.Migrations
 
                     b.HasOne("Entity.Venta", "Vent")
                         .WithMany()
-                        .HasForeignKey("VentId");
+                        .HasForeignKey("Venta")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Entity.Venta", b =>
                 {
-                    b.HasOne("Entity.Producto", "Producto")
-                        .WithMany()
-                        .HasForeignKey("ProductoId");
-
                     b.HasOne("Entity.Usuario", "User")
                         .WithMany()
                         .HasForeignKey("Vendedor");

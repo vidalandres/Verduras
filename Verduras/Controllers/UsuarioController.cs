@@ -60,9 +60,10 @@ namespace Verduras.Controllers
         {
             var usuario = new Usuario
             {
-                Cedula = usuarioInput.Cedula,
-                Nombre = usuarioInput.Nombre,
-                Rol = usuarioInput.Rol,
+                UserName= usuarioInput.UserName,
+                Password= usuarioInput.Password,
+                FirstName= usuarioInput.FirstName,
+                LastName= usuarioInput.LastName,
             };
             return usuario;
         }

@@ -39,7 +39,7 @@ namespace Verduras.Controllers
         [HttpGet("{id}")]
         public IEnumerable<Vendido> GetsVendidos(int id)
         {
-            this.genLog($"Ha entrado => {id}");
+            //this.genLog($"Ha entrado => {id}");
             var ventas = _vendidoService.Consultar(id);
             return ventas;
         }
