@@ -52,10 +52,16 @@ namespace Verduras.Migrations
                     b.ToTable("Productos");
                 });
 
-            modelBuilder.Entity("Entity.Usuario", b =>
+            modelBuilder.Entity("Entity.User", b =>
                 {
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Estado")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
@@ -63,12 +69,15 @@ namespace Verduras.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MobilePhone")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserName");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Entity.Vendido", b =>
@@ -136,7 +145,7 @@ namespace Verduras.Migrations
 
             modelBuilder.Entity("Entity.Venta", b =>
                 {
-                    b.HasOne("Entity.Usuario", "User")
+                    b.HasOne("Entity.User", "User")
                         .WithMany()
                         .HasForeignKey("Vendedor");
                 });

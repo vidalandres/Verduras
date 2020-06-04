@@ -13,59 +13,62 @@ using Verduras.Models;
 
 namespace Verduras.Controllers
 {
-    [Route("api/usuario")]
+    [Route("api/user")]
     [ApiController]
-    public class UsuarioController: ControllerBase
+    public class UserController: ControllerBase
     {
-        private readonly UsuarioService _usuarioService;
+        private readonly UserService _userService;
         
-        public UsuarioController(GeneralContext _context)
+        public UserController(GeneralContext _context)
         {
-            _usuarioService = new UsuarioService(_context);
+            _userService = new UserService(_context);
         }
-        // GET: api/Usuario
+        // GET: api/User
         [HttpGet]
-        public IEnumerable<UsuarioViewModel> Gets()
+        public IEnumerable<LogViewModel> Gets()
         {
-            var usuarios = _usuarioService.ConsultarTodos().Select(p=> new UsuarioViewModel(p));
-            return usuarios;
+            var users = _userService.ConsultarTodos().Select(p=> new LogViewModel(p));
+            return users;
         }
 
-        // POST: api/Usuario
+        // POST: api/User
         [HttpPost]
-        public ActionResult<UsuarioViewModel> Post(UsuarioInputModel usuarioInput)
+        public ActionResult<LogViewModel> Post(LogViewModel userInput)
         {
-            Usuario usuario = MapearUsuario(usuarioInput);
-            var response = _usuarioService.Guardar(usuario);
+            User user = MapearUser(userInput);
+            var response = _userService.Guardar(user);
             if (response.Error)
             {
                 return BadRequest(response.Mensaje);
             }
-            return Ok(response.Usuario);
+            return Ok(response.User);
         }
 
         [HttpPut]
-        public ActionResult<UsuarioViewModel> Put(Usuario usuario)
+        public ActionResult<LogViewModel> Put(User user)
         {
-            var response = _usuarioService.Actualizar(usuario);
+            var response = _userService.Actualizar(user);
             if (response.Error)
             {
                 return BadRequest(response.Mensaje);
             }
-            return Ok(response.Usuario);
+            return Ok(response.User);
             
         }
 
-        private Usuario MapearUsuario(UsuarioInputModel usuarioInput)
+        private User MapearUser(LogViewModel userInput)
         {
-            var usuario = new Usuario
+            var user = new User
             {
-                UserName= usuarioInput.UserName,
-                Password= usuarioInput.Password,
-                FirstName= usuarioInput.FirstName,
-                LastName= usuarioInput.LastName,
+                UserName= userInput.UserName,
+                Password= userInput.Password,
+                FirstName= userInput.FirstName,
+                LastName= userInput.LastName,
+                Estado = userInput.Estado,
+                Email = userInput.Email,
+                MobilePhone = userInput.MobilePhone
             };
-            return usuario;
+            return user;
         }
     }
 

@@ -10,7 +10,7 @@ namespace Entity
     {
         [Key]
         public int Id { get; set; }
-        public Usuario User { get; set; }
+        public User User { get; set; }
 
         [ForeignKey("User")]
         public string Vendedor { get; set; }

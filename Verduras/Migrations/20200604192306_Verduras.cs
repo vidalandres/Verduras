@@ -27,17 +27,20 @@ namespace Verduras.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Usuarios",
+                name: "Users",
                 columns: table => new
                 {
                     UserName = table.Column<string>(nullable: false),
                     Password = table.Column<string>(nullable: true),
+                    Estado = table.Column<string>(nullable: true),
                     FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true)
+                    LastName = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true),
+                    MobilePhone = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Usuarios", x => x.UserName);
+                    table.PrimaryKey("PK_Users", x => x.UserName);
                 });
 
             migrationBuilder.CreateTable(
@@ -55,9 +58,9 @@ namespace Verduras.Migrations
                 {
                     table.PrimaryKey("PK_Ventas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Ventas_Usuarios_Vendedor",
+                        name: "FK_Ventas_Users_Vendedor",
                         column: x => x.Vendedor,
-                        principalTable: "Usuarios",
+                        principalTable: "Users",
                         principalColumn: "UserName",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -116,7 +119,7 @@ namespace Verduras.Migrations
                 name: "Ventas");
 
             migrationBuilder.DropTable(
-                name: "Usuarios");
+                name: "Users");
         }
     }
 }

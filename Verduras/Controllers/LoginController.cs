@@ -7,24 +7,47 @@ using Datos;
 using Logica;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using Verduras.Models;
+using Verduras.Config;
 
 
 namespace Verduras.Controllers
 {
+    [Authorize]
     [Route("api/login")]
     [ApiController]
     public class LoginController: ControllerBase
     {
-        private readonly UsuarioService _usuarioService;
+        private readonly GeneralContext _context;
+        private readonly UserService _userService;
+        private readonly JwtService _jwtService;
         
-        public LoginController(GeneralContext _context)
-        {
-            _usuarioService = new UsuarioService(_context);
+        public LoginController(GeneralContext context, IOptions<AppSetting> appSettings)
+        {   _context = context;
+            var admin = _context.Users.Find("admin");
+            if (admin == null)
+            {
+                _context.Users.Add(new User()
+                {
+                    UserName="admin",
+                    Password="admin",
+                    Email="admin@gmail.com",
+                    Estado="AC",
+                    FirstName="Adminitrador",
+                    LastName="",
+                    MobilePhone="31800000000"
+                }
+            );
+            var registrosGuardados=_context.SaveChanges();
+            }
+            _userService = new UserService(context);
+            _jwtService = new JwtService(appSettings);
         }
 
-        [HttpPost]
+        /*[HttpPost]
         public ActionResult<UsuarioViewModel> Post(LogModel log)
         {
             var usuario = _usuarioService.ConsultarLog(log.Username,log.Password);
@@ -33,8 +56,18 @@ namespace Verduras.Controllers
                 return Ok(usuario);
             }
             return BadRequest("Credenciales invalidas");
-        }
+        }*/
 
+        [AllowAnonymous]
+        [HttpPost]
+        public IActionResult Login([FromBody]LogInputModel model)
+        {
+            var user = _userService.Validate(model.UserName, model.Password);
+            if (user == null) 
+                return BadRequest("Username or password is incorrect");
+            var response= _jwtService.GenerateToken(user);
+            return Ok(response);
+        }
        
     }
 
