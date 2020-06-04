@@ -15,11 +15,12 @@ namespace Verduras.Models
 
         public void GenUtilidad(){
             this.Utilidad = 0;
+            this.Total = 0;
             this.Productos.ForEach(
                 x => {
                     this.Utilidad += x.GenUtilidad();
                     x.GenPrecio();
-                    this.Total = x.Precio;
+                    this.Total += x.Precio;
                 }
             );
         }

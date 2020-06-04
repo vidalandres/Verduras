@@ -11,4 +11,6 @@
 .sell{
     width: 50%;
     padding-left: 5px;
+    display: flex;
+    flex-direction: column;
 }

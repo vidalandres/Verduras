@@ -6,7 +6,8 @@ import { ProductoService } from '../services/producto.service';
 import { ClientService } from 'src/app/services/client.service';
 import { SellService } from '../services/sell.service';
 import { Venta } from '../models/venta';
-import { Usuario } from '../models/usuario';
+import { AuthenticationService } from 'src/app/services/authentication.service';
+import { User } from 'src/app/seguridad/user';
 
 
 @Component({
@@ -19,9 +20,13 @@ export class SellComponent implements OnInit {
   facts:Producto[]=new Array<Producto>();
   productos:Producto[];
   key:string;
-  vendedor:Usuario = new Usuario();
 
-  constructor( private productoSe:ProductoService, private cS:ClientService, private sS:SellService ) {
+
+
+  constructor( private productoSe:ProductoService, 
+    private cS:ClientService, 
+    private sS:SellService,
+    private authenticationService: AuthenticationService ) {
     this.productos = new Array<Producto>();
   }
 
@@ -62,7 +67,7 @@ export class SellComponent implements OnInit {
     var venta = new Venta();
     venta.productos = this.facts;
     venta.fecha = new Date();
-    venta.vendedor = this.vendedor.cedula = "1065";
+    venta.vendedor = this.authenticationService.currentUserValue.userName;
     this.sS.post(venta).subscribe(
       (data) => {
         alert("Se ha vendido");
@@ -71,6 +76,10 @@ export class SellComponent implements OnInit {
         alert("Error al vender");
       }
     );
+  }
+
+  user():string{
+    return this.authenticationService.currentUserValue.firstName;
   }
 
 }
